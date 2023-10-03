@@ -49,6 +49,42 @@ while True:
                 print(f"Your Current Balance is: {initial_balance:.2f}")
                 print("*" *35)
 
+# Multiple Transactions    
+
+import os
+from time import sleep
+while True:
+    Selection = input("Enter your selection:").upper()
+
+    if selection not in options:
+        print("*" * 35)
+        print("INVALID SELECTION".center(40))
+        print("*" * 35)
+    else:
+        if selection == "Q":
+            break
+        if selection == "D":
+            deposit_amount = float(input("Enter amount of transaction:"))
+            initial_balance += deposit_amount
+            print(f"Your Current Balance is: {initial_balance:2f}")
+        elif selection =="W":
+            withdraw_amount = float(input("Enter amount of transaction: "))
+            if withdraw_amount <= initial_balance:
+                initial_balance -= withdraw_amount
+                print("*" * 35)
+                print("*" * 35)
+                print(f"Your Current Balance is : {initial_balance:.2f}")
+        else:
+            print("*" * 35)
+            print("Insufficient Funds".center(35))
+sleep(3)
+os.system('cls' if os.name == 'nt' else 'clear')
+                     
+
+
+
+
+
 
 
  
