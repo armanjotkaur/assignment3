@@ -44,6 +44,29 @@ for account_number, balance in account_balances.items():
 # Display of updated account balances
 pprint.pprint(account_balances)
 
+current_date = datetime.now().strftime("%Y-%m-%d")
+initials = "AK"
+csvfile = f"{current_date}--{initials}.csv"
+
+# explain the CSV headings
+csv_headings = ["account", "Balance"]
+
+# Writing new data in CVS file
+with open(csvfile, "w", newline="") as csv_file:
+    writer = csv.writer(csv_file)
+    writer.writerow(csv_headings)
+    for account_number, balance in account_balances.items():
+        writer.writerow([account_number, balance])
+print(csv_file)
+
+# Use DictReader to open and raed the csv file
+with open(csvfile, "r") as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    for row in csv_reader:
+        print(row)
+
+    
+
 
 
 
