@@ -1,0 +1,20 @@
+# [ATM Transactions]
+
+## Description
+I'd like to discuss control flow in Ptython progarmming in this assignment. To craete a wide range of potentail outcomes, I wpuld employ teamwork and logic loops.
+
+## Author
+[Armanjot kaur]
+
+## Assignment
+This assignment involves the development of two programs:
+ 
+ The first will simulate an ATM (automated Teller machine) for the purpose of executing transactions against bank balances in the Pixell River Finance bank.
+
+ The second will perform batch interest updates foir the Pixell River Financial bank. Existing accounts will be updated based on predefined interest rate rules. The program will write the updated account balances to a .cvs file.
+
+ ## Bank Transactions:
+ As a Pixell river Financial customer, I want to use a simulated ATM for depositand withdraw transactions, So that I can easily manage my bank transactions.
+
+ ## Update the Interest:
+ As the VP Client services, I want to apply interest to multiple customers' accounts based on their current balances, so that I can help our customers' grow their wealth over time.
