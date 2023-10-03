@@ -29,9 +29,9 @@ while True:
     selection = input("Enter your selection: ").upper()
 
     if selection not in options:
-        print("*" * 35)
+        print("*" * 40)
         print("INVALID SELECTION".center(40))
-        print("*" *35)
+        print("*" *40)
 
     else:
         if selection == "Q" :
@@ -44,10 +44,10 @@ while True:
             withdraw_amount = float(input("Enter amount of transaction"))
             if withdraw_amount <= initial_balance:
                 initial_balance -= withdraw_amount
-                print("*" * 35)
-                print("*" *35)
+                print("*" * 40)
+                print("*" *40)
                 print(f"Your Current Balance is: {initial_balance:.2f}")
-                print("*" *35)
+                print("*" *40)
 
 # Multiple Transactions    
 
@@ -57,9 +57,9 @@ while True:
     Selection = input("Enter your selection:").upper()
 
     if selection not in options:
-        print("*" * 35)
+        print("*" * 40)
         print("INVALID SELECTION".center(40))
-        print("*" * 35)
+        print("*" * 40)
     else:
         if selection == "Q":
             break
@@ -71,15 +71,15 @@ while True:
             withdraw_amount = float(input("Enter amount of transaction: "))
             if withdraw_amount <= initial_balance:
                 initial_balance -= withdraw_amount
-                print("*" * 35)
-                print("*" * 35)
+                print("*" * 40)
+                print("*" * 40)
                 print(f"Your Current Balance is : {initial_balance:.2f}")
         else:
-            print("*" * 35)
-            print("Insufficient Funds".center(35))
+            print("*" * 40)
+            print("Insufficient Funds".center(40))
 sleep(3)
 os.system('cls' if os.name == 'nt' else 'clear')
-                     
+
 
 
 

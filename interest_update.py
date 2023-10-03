@@ -8,7 +8,7 @@ import csv
 import pprint
 from datetime import datetime
 
-
+# Opening exisiting txt file
 account_balances = {}
 with open("account_balances.txt", "r") as file:
     for line in file:
@@ -41,14 +41,14 @@ for account_number, balance in account_balances.items():
         # Updation of Balance with Interest Charge
         account_balances[account_number] += monthly_interest
 
-# Display of updated account balances
+# Output of updated account balances
 pprint.pprint(account_balances)
 
 current_date = datetime.now().strftime("%Y-%m-%d")
 initials = "AK"
 csvfile = f"{current_date}--{initials}.csv"
 
-# explain the CSV headings
+
 csv_headings = ["account", "Balance"]
 
 # Writing new data in CVS file
@@ -59,7 +59,7 @@ with open(csvfile, "w", newline="") as csv_file:
         writer.writerow([account_number, balance])
 print(csv_file)
 
-# Use DictReader to open and raed the csv file
+# opening and readingd the csv file
 with open(csvfile, "r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
     for row in csv_reader:
