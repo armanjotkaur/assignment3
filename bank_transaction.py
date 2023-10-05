@@ -23,7 +23,7 @@ print("To Quit: Q".center(40))
 print("*" * 40)
 
 
-## Incorporate Transactions of ATM
+## Incorporate Transactions of ATM Bank
 
 while True:
     selection = input("Enter your selection: ").upper()
